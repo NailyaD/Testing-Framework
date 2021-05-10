@@ -5,5 +5,5 @@ import workademy.utils.PropertiesLoader;
 public class WAStagingPage {
 
     /* Properties */
-    public static String basicURL = PropertiesLoader.loadProperty("url");
+    public static String basicURL = PropertiesLoader.loadProperty("basic.Url");;
 }

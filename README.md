@@ -16,7 +16,7 @@ The project contains one feature file describing the following test scenarios:
 * Maven
 * Git
 * Selenide & Selenium
-* Cucumber
+* TestNG
 * Chrome browser (you may also use the following browsers: FireFox, Microsoft Edge)
 
 ## How to run

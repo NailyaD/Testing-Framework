@@ -8,8 +8,8 @@ import static com.codeborne.selenide.Selenide.$;
 public class WASignInPage {
 
     /* Properties */
-    private static String validEmail = PropertiesLoader.loadProperty("valid.email");
-    private static String validPwd = PropertiesLoader.loadProperty("valid.password");
+    public static String validEmail = PropertiesLoader.loadProperty("valid.email");
+    public static String validPwd = PropertiesLoader.loadProperty("valid.password");
 
     /* Elements */
     public static final By emailInput = By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/main[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[3]/form[1]/div[1]/div[1]/div[1]/div[1]/input[1]");
@@ -26,8 +26,8 @@ public class WASignInPage {
         $(invalidSigningInMsg).isDisplayed();
     }
 
-    public void validSignInInput() {
-        $(emailInput).setValue(validEmail);
-        $(pwdInput).setValue(validPwd);
+    public void signInInput(String email, String pwd) {
+        $(emailInput).setValue(email);
+        $(pwdInput).setValue(pwd);
     }
 }
